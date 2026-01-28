@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1580156479767645');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1580156479767645&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Profitable Trader</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: linear-gradient(180deg, #000000, #0f0f0f);
+            border-radius: 15px;
+            padding: 25px 20px;
+            text-align: center;
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.2);
+        }
+
+        /* Title */
+        .title {
+            font-size: 22px;
+            font-weight: 700;
+            color: #ffd700;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Profile Image */
+        .profile {
+            width: 170px;
+            height: 170px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            border: 4px solid #ffd700;
+            overflow: hidden;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Name */
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        /* Features */
+        .features {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+
+        .feature span {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+
+        /* Button */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(90deg, #ffcc00, #ff9900, #0066ff);
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+        }
+
+        /* Countdown */
+        .countdown {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            color: #ff3333;
+            font-weight: 600;
+        }
+
+        .time-box {
+            width: 22%;
+            background: #111;
+            padding: 8px 5px;
+            border-radius: 8px;
+            border: 1px solid #222;
+        }
+
+        .time-box h3 {
+            font-size: 18px;
+        }
+
+        .time-box p {
+            font-size: 11px;
+            margin-top: 3px;
+            color: #aaa;
+        }
+
+        @media(max-width: 480px){
+            .container{
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">MOST PROFITABLE TRADER</h1>
+
+    <div class="profile">
+        <!-- Replace image path -->
+        <img src="logo.webp" alt="Trader">
+    </div>
+
+    <h2 class="name">SAURABH CHOUDHARY</h2>
+    <p class="subtitle">ONE OF THE BEST INDIAN TRADER</p>
+
+    <div class="features">
+        <div class="feature"><span>🏅</span> Supports and Guidance</div>
+        <div class="feature"><span>💡</span> Experts Tips & Strategies</div>
+        <div class="feature"><span>🤝</span> Daily Free Signals 100%</div>
+    </div>
+
+    <a href="https://wa.me/918741989550?text=Hello%20I%20want%20to%20join%20your%20trading%20group" class="btn" target="_blank">JOIN NOW WHATSAPP</a>
+
+    <div class="countdown" id="countdown">
+        <div class="time-box">
+            <h3 id="days">00</h3>
+            <p>DAYS</p>
+        </div>
+        <div class="time-box">
+            <h3 id="hours">00</h3>
+            <p>HOURS</p>
+        </div>
+        <div class="time-box">
+            <h3 id="minutes">00</h3>
+            <p>MINUTES</p>
+        </div>
+        <div class="time-box">
+            <h3 id="seconds">00</h3>
+            <p>SECONDS</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    // Set countdown date (change if needed)
+    const targetDate = new Date();
+    targetDate.setDate(targetDate.getDate() + 2); // 2 days from now
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+
+        if (distance < 0) {
+            document.getElementById("countdown").innerHTML = "<p>Offer Expired</p>";
+            return;
+        }
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = String(days).padStart(2, '0');
+        document.getElementById("hours").innerText = String(hours).padStart(2, '0');
+        document.getElementById("minutes").innerText = String(minutes).padStart(2, '0');
+        document.getElementById("seconds").innerText = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+</script>
+
+</body>
+</html>
